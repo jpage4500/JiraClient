@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="create_run_jar" name="Create Runnable Jar for Project JiraClient">
+    <!--this file was created by Eclipse Runnable JAR Export Wizard-->
+    <!--ANT 1.7 is required                                        -->
+    <target name="create_run_jar">
+        <jar destfile="/Users/jpage4500/working/mobeam/beepngo-ios/tools/bin/JiraClient/JiraClient.jar" filesetmanifest="mergewithoutmain">
+            <manifest>
+                <attribute name="Main-Class" value="JiraCommandLine"/>
+                <attribute name="Class-Path" value="."/>
+            </manifest>
+            <fileset dir="/Users/jpage4500/working/mobeam/beepngo-ios/tools/bin/JiraClient/bin"/>
+            <zipfileset excludes="META-INF/*.SF" src="/Users/jpage4500/working/mobeam/beepngo-ios/tools/bin/JiraClient/lib/jira-client-0.6-SNAPSHOT.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="/Users/jpage4500/working/mobeam/beepngo-ios/tools/bin/JiraClient/lib/commons-lang3-3.4.jar"/>
+        </jar>
+    </target>
+</project>
